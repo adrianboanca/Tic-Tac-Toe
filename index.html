@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X și 0</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 5px;
+            margin-bottom: 20px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="board">
+               <div class="cell"></div>
+               <div class="cell"></div>
+               <div class="cell"></div>
+               <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                 <div class="cell"></div>
+                <div class="cell"></div>
+             </div>
+        <button id="resetButton" class="hidden">Play Again</button>
+    <script src="script.js"></script>
+</body>
+</html>
